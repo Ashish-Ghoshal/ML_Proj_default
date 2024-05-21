@@ -24,7 +24,6 @@ class DataValidationConfig:
 class DataTransformationConfig:
     root_dir: Path
     data_path: Path
-    target_column: str
 
 
 
