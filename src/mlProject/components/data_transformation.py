@@ -19,7 +19,11 @@ class DataTransformation:
 
     def train_test_spliting(self):
         data = pd.read_csv(self.config.data_path)
-
+        # Would have to add outlier handling and SCALING here
+        
+        
+        # Add PCA HERE
+        
         # Split the data into training and test sets. (0.75, 0.25) split.
         train, test = train_test_split(data)
 
