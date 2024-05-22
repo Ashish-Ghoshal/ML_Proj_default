@@ -76,7 +76,7 @@ Now open up your local host 0.0.0.0:8080
 
 	
 ## 3. Create ECR repo to store/save docker image
-    - Save the URI: 347059837757.dkr.ecr.us-east-1.amazonaws.com/mlproj
+    - Save the URI: 347059837757.dkr.ecr.us-east-1.amazonaws.com/mlproject_2
 
 	
 ## 4. Create EC2 machine (Ubuntu) 
