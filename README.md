@@ -117,8 +117,16 @@ Now open up your local host 0.0.0.0:8080
     ECR_REPOSITORY_NAME = simple-app
 
 
+Removed line from cicd.yaml file after
 
+		- name: Pull latest images
+        run: |
+         docker pull ${{secrets.AWS_ECR_LOGIN_URI}}/${{ secrets.ECR_REPOSITORY_NAME }}:latest
 
+#Deleted line
+		- name: Stop and remove container if running
+        run: |
+         docker ps -q --filter "name=cnncls" | grep -q . && docker stop cnncls && docker rm -fv cnncls
 
 
  git config --global user.name "entbappy"
